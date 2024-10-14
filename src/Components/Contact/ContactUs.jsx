@@ -1,5 +1,5 @@
 import { useState } from "react";
-import img from "../../assets/contactUs.jpg";
+import img from "../../assets/contactus.jpg";
 import Design from "./design";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
