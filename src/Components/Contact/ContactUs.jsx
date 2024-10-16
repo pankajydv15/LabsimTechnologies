@@ -20,7 +20,7 @@ function ContactUs() {
     event.preventDefault(); // Prevent default form submission behavior
 
     try {
-      const response = await fetch("http://localhost:5000/contactUs", {
+      const response = await fetch("https://labsimbackend.onrender.com/contactUs", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
