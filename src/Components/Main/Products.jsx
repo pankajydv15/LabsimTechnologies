@@ -1,7 +1,8 @@
-// import React from 'react'
+import { Link } from "react-router-dom";
 import HMV from "../../assets/HMV.jpg";
 import lmv from "../../assets/LMV.jpg";
 import tws from "../../assets/TWS.jpg";
+
 
 function Products() {
   return (
@@ -48,7 +49,10 @@ function Products() {
             </div>
             <div className="px-4 pb-4 pt-0 mt-2">
               <button className="rounded-md bg-slate-800 dark:bg-green-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 dark:focus:bg-green-500 active:bg-slate-700 dark:active:bg-green-500 hover:bg-slate-700">
-                Read more
+              <Link 
+                to='/hmv'>
+                Explore
+                </Link>
               </button>
             </div>
           </div>
@@ -64,7 +68,7 @@ function Products() {
             </div>
             <div className="p-4">
               <h6 className="mb-2 text-slate-800 uppercase dark:text-green-400  text-xl font-semibold">
-                LMV SIMULATOR (Light moter Vehicle)
+                LMV SIMULATOR (Light motor Vehicle)
               </h6>
               <p className="text-slate-600 dark:text-gray-300 leading-normal font-normal">
                 The LMV Simulator from Labsim Technologies provides a realistic
@@ -77,7 +81,10 @@ function Products() {
             </div>
             <div className="px-4 pb-4 pt-0 mt-2">
               <button className="rounded-md bg-slate-800 dark:bg-green-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 dark:focus:bg-green-500 active:bg-slate-700 dark:active:bg-green-500 hover:bg-slate-700">
-                Read more
+              <Link 
+                to='/lmv'>
+                Explore
+                </Link>
               </button>
             </div>
           </div>
@@ -107,7 +114,10 @@ function Products() {
             </div>
             <div className="px-4 pb-4 pt-0 mt-2">
               <button className="rounded-md bg-slate-800 dark:bg-green-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 dark:focus:bg-green-500 active:bg-slate-700 dark:active:bg-green-500 hover:bg-slate-700">
-                Read more
+                <Link 
+                to='/tmv'>
+               Explore
+                </Link>
               </button>
             </div>
           </div>

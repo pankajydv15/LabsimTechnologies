@@ -21,41 +21,101 @@ function About() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center  dark:text-white">
-        <h1 className="text-3xl text-green-700 mt-8 dark:text-white font-semibold font-serif">
-          Labsim Technologies Private Limited
-          <hr className="dark:border-gray-100 border-gray-900 sm:mx-auto lg:my-4" />
-        </h1>
+      {/* main */}
 
-        <div className="flex flex-col items-center bg-gray-800 p-14 m-8 rounded-full dark:text-white">
-          <div className="flex flex-col lg:flex-row ">
-            {/* Text Section */}
-            <div className="w-full lg:w-1/2 border border-green-600 rounded-full p-14 mb-8 lg:mb-0 flex flex-col items-center text-center">
-              <h1 className="text-3xl font-semibold font-serif py-8">
-                Experts in <span className="text-green-600">Automotive</span> &{" "}
-                <span className="text-green-600">Customized</span> Simulator
-                Development
-              </h1>
-              <p className="dark:text-white pb-8">
-                Labsim Technologies Private Ltd. is the technical leader for
-                design & development of automotive simulators, customized
-                simulators, software development & technical consultants for any
-                type of simulator development. Labsim Technologies Pvt. Ltd. is
-                headquartered in Delhi with a dedicated team for hardware &
-                software development, Production, R & D lab, and service
-                management team.
+      <div className="py-16 px-6 lg:px-20">
+        {/* Introduction Section */}
+        <div className="max-w-7xl mx-auto text-center mb-12">
+          <h1 className="text- font-serif lg:text-5xl font-bold text-green-500  mb-4">
+            Labsim Technologies
+            <hr className="dark:border-gray-100 border-gray-900 sm:mx-auto lg:my-4" />
+          </h1>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+            At Labsim Technologies, we are committed to pushing the boundaries
+            of simulation technology, delivering unparalleled innovation, and
+            tailoring solutions that meet the unique demands of our clients.
+          </p>
+        </div>
+
+        {/* Content Section: Image + Text */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+          {/* Image */}
+          <div className="relative">
+            <img
+              src={pic1}
+              alt="Labsim Simulator"
+              className="rounded-3xl shadow-lg transform hover:scale-105 transition-transform duration-500"
+            />
+            <div className="absolute -top-4 -left-4 w-full h-full bg-green-500/10 rounded-3xl blur-lg"></div>
+          </div>
+
+          {/* Text */}
+          <div className="flex flex-col justify-center">
+            <h2 className="text-3xl font-semibold text-green-700 dark:text-green-400 mb-6">
+              Experts in Simulation Technology
+            </h2>
+            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+              Labsim Technologies Private Limited specializes in automotive
+              simulators, customized solutions, and advanced software. With over
+              40 simulators designed and deployed across India, we bring
+              unparalleled expertise and innovation to the simulation industry.
+            </p>
+            <ul className="list-disc list-inside text-gray-600 dark:text-gray-400">
+              <li>Headquarters in Delhi with advanced R&D facilities.</li>
+              <li>
+                Dedicated teams for hardware, software, and service management.
+              </li>
+              <li>Comprehensive solutions tailored to your needs.</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Grid Section: Why Labsim */}
+        <div>
+          <h2 className="text-3xl lg:text-4xl font-bold font-serif text-center text-green-500  mb-12">
+            Why Choose Labsim Technologies?
+            <hr className="border-gray-200 w-3/5  sm:mx-auto lg:my-4" />
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Card 1 */}
+            <div className="bg-gradient-to-b from-gray-900 to-black rounded-3xl shadow-md p-8 text-center">
+              <div className="text-green-500 text-4xl mb-4">🚀</div>
+              <h3 className="text-xl text-green-500 font-semibold mb-4">
+                Innovation at its Best
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                We integrate cutting-edge tools and platforms to create
+                simulators that deliver real-life experiences.
               </p>
             </div>
-
-            {/* Image Section */}
-            <div className="flex flex-col items-center lg:items-end">
-              <img
-                src={pic1}
-                className="w-auto h-48 flex md:w-64 md:h-64 lg:w-auto lg:h-96 mt-8 lg:ml-72 rounded-full"
-              />
+            {/* Card 2 */}
+            <div className="bg-gradient-to-b from-gray-900 to-black rounded-3xl shadow-md p-8 text-center">
+              <div className="text-green-500 text-4xl mb-4">🤝</div>
+              <h3 className="text-xl text-green-500 font-semibold mb-4">
+                Tailored 
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                Each project is customized to ensure client satisfaction and
+                precise implementation.
+              </p>
+            </div>
+            {/* Card 3 */}
+            <div className="bg-gradient-to-b from-gray-900 to-black rounded-3xl shadow-md p-8 text-center">
+              <div className="text-green-700 dark:text-green-400 text-4xl mb-4">
+                🌍
+              </div>
+              <h3 className="text-xl text-green-500 font-semibold mb-4">
+                Global Expertise
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                With a team of seasoned engineers, Labsim delivers globally
+                competitive solutions.
+              </p>
             </div>
           </div>
         </div>
+
+        {/* Call-to-Action Section */}
       </div>
       <Details />
     </section>

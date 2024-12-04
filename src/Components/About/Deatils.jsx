@@ -1,47 +1,100 @@
 import pic1 from "../../assets/pic1.jpeg";
-import pic2 from "../../assets/pic2.jpeg";
 
 function Details() {
   return (
-    <section className="bg-white dark:bg-custom-gradient-reverse transition-colors duration-300 py-12  px-4 md:px-8 lg:px-16">
+    <section className="relative bg-gradient-to-b from-gray-900 to-black text-gray-100 py-16">
+      {/* Decorative Elements */}
+      <div className="absolute inset-0 bg-gradient-to-r from-green-700/40 via-gray-900/50 to-black/40 -z-10"></div>
+
       {/* Container */}
-      <div className="flex flex-col lg:flex-row items-center lg:m-10  lg:items-center">
-        {/* Image Section */}
-        <div className="flex flex-col items-center lg:items-start space-y-8 mb-8  lg:mb-0">
-          <img
-            src={pic1}
-            className="w-32 h-32 md:w-48 md:h-48 lg:w-96 lg:h-full rounded-xl border-4 border-green-600 shadow-lg   hover:scale-105 transition-all duration-500"
-            alt="Simulation Image 1"
-          />
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 space-y-12">
+        {/* Header Section */}
+        <div className="text-center space-y-4">
+          <h1 className="text-4xl lg:text-5xl text-green-500 font-serif  tracking-wide">
+            Redefining Simulation Excellence
+            <hr className="dark:border-gray-100 border-gray-900 sm:mx-auto lg:my-4" />
+          </h1>
+          <p className="text-2xl text-gray-300">
+            Cutting-edge technology to empower immersive experiences.
+          </p>
         </div>
 
-        {/* Text Section */}
-        <div className="flex justify-center mt-8 lg:justify-evenly w-full">
-          <div className="w-full h-full lg:w-2/3  bg-gray-50 dark:bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 transition-all duration-300">
-            <h1 className="text-2xl md:text-3xl font-semibold font-serif py-4 text-center lg:text-left text-gray-800 dark:text-gray-100 leading-snug">
-              <span className="text-green-600">Pioneering</span> Realistic{" "}
-              <span className="text-green-600">Simulation</span> with Cutting-Edge{" "}
-              <span className="text-green-600">Technology</span> and{" "}
-              <span className="text-green-700">Expertise</span> Development
-            </h1>
-            <p className="dark:text-gray-300 text-gray-600 text-justify mt-6">
-              Labsim engineers are highly experienced in simulation technology
-              using the latest tools of software & hardware platforms. Labsim has
-              designed & developed more than 40 driver training simulators in
-              India and successfully installed at customer sites. Labsim started
-              with a group of highly technical skilled engineers and now offers
-              the world’s best realistic simulation technologies at affordable
-              prices with advanced features.
+        {/* Content Section */}
+        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+          {/* Image */}
+          <div className="relative">
+            <img
+              src={pic1}
+              alt="Simulation Image"
+              className="rounded-lg shadow-2xl w-full max-w-lg lg:max-w-md hover:scale-105 transition-transform duration-500"
+            />
+            <div className="absolute -bottom-4 -right-4 bg-green-600 rounded-lg p-6 shadow-lg hidden lg:block">
+              <h3 className="text-lg font-medium text-white">
+                Experience Advanced Technology
+              </h3>
+            </div>
+          </div>
+
+          {/* Text */}
+          <div className="flex-1 space-y-6">
+            <h2 className="text-3xl font-semibold">
+              Why Choose <span className="text-green-500">Labsim</span>?
+              {/* <hr className="border-gray-100 sm:mx-auto lg:my-4 " /> */}
+            </h2>
+            <p className="text-lg text-gray-300 leading-relaxed">
+              Labsim engineers are experts in cutting-edge simulation technology,
+              offering tailored solutions that set the industry standard. From
+              immersive driver training simulators to advanced AR/VR applications,
+              we are committed to delivering excellence.
+            </p>
+            <p className="text-lg text-gray-300 leading-relaxed">
+              With over 40 successful installations across India, Labsim continues
+              to push boundaries, ensuring unparalleled quality, scalability, and
+              affordability for our clients.
             </p>
           </div>
         </div>
-      </div>
 
-      {/* Bottom Section */}
-      <div className="w-full lg:w-2/3 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-md flex items-center justify-center mx-auto mt-12 p-8">
-        <h1 className="text-lg md:text-xl font-medium text-center text-gray-800 dark:text-gray-100 leading-relaxed">
-          Labsim is committed to our customers and has a passion for technology. We take on big challenges, and pride ourselves on seeing them through. We hold ourselves accountable to our customers, ensuring a high level of satisfaction is a core component of our business.
-        </h1>
+        {/* Features Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="bg-gray-800 rounded-lg p-6 shadow-md text-center">
+            <h3 className="text-xl font-medium text-green-500">40+ Projects</h3>
+            <p className="text-gray-300">
+              Successfully delivered across various industries.
+            </p>
+          </div>
+          <div className="bg-gray-800 rounded-lg p-6 shadow-md text-center">
+            <h3 className="text-xl font-medium text-green-500">Tailored Solutions</h3>
+            <p className="text-gray-300">
+              Designed to meet specific client needs.
+            </p>
+          </div>
+          <div className="bg-gray-800 rounded-lg p-6 shadow-md text-center">
+            <h3 className="text-xl font-medium text-green-500">Cutting-edge Tech</h3>
+            <p className="text-gray-300">
+              Leveraging the latest in simulation technology.
+            </p>
+          </div>
+          <div className="bg-gray-800 rounded-lg p-6 shadow-md text-center">
+            <h3 className="text-xl font-medium text-green-500">Expert Team</h3>
+            <p className="text-gray-300">
+              Skilled professionals with a passion for innovation.
+            </p>
+          </div>
+        </div>
+
+        {/* Call to Action */}
+        <div className="text-center mt-12">
+          <h2 className="text-2xl lg:text-3xl font-bold mb-4">
+            Ready to Elevate Your Experience?
+          </h2>
+          <p className="text-lg text-gray-300 mb-6">
+            Let’s bring your vision to life with Labsim’s advanced solutions.
+          </p>
+          <button className="px-8 py-4 bg-green-600 text-white rounded-full shadow-lg hover:bg-green-700 transition-all">
+            Get Started
+          </button>
+        </div>
       </div>
     </section>
   );

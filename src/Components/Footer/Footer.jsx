@@ -1,32 +1,37 @@
-import truck from "../../assets//truck.jpg";
+import logo from "../../assets/logo.png";
 
 function Footer() {
   return (
     <>
-      <footer className="bg-gray-800 text-white py-10">
+      <footer className="bg-gradient-to-b from-gray-900 to-black text-white py-10">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
             
             {/* Logo Section */}
-            <div className="flex justify-center lg:justify-start">
-              <img src={truck} alt="Truck" className="w-48 h-auto object-contain" />
+            <div className=" bg-gray-800 flex justify-center lg:justify-center">
+              <img src={logo} alt="logo" className="w-64" />
             </div>
 
             {/* Products Section */}
             <div className="text-center font-mono lg:text-left">
-              <h6 className="text-lg font-semibold uppercase mb-4 text-green-400">Products</h6>
+              <h6 className="text-lg font-semibold uppercase mb-4 text-green-400">Business Activities
+              </h6>
               <ul>
                 <li className="mb-2">
-                  <a href="#!" className="text-gray-400 hover:text-green-400 transition duration-300">Angular</a>
+                  <a href="#!" className="text-gray-400 hover:text-green-400 transition duration-300">Manufacturing
+                  </a>
                 </li>
                 <li className="mb-2">
-                  <a href="#!" className="text-gray-400 hover:text-green-400 transition duration-300">React</a>
+                  <a href="#!" className="text-gray-400 hover:text-green-400 transition duration-300">Sale 
+                  </a>
                 </li>
                 <li className="mb-2">
-                  <a href="#!" className="text-gray-400 hover:text-green-400 transition duration-300">Vue</a>
+                  <a href="#!" className="text-gray-400 hover:text-green-400 transition duration-300">Service
+                  </a>
                 </li>
                 <li>
-                  <a href="#!" className="text-gray-400 hover:text-green-400 transition duration-300">Laravel</a>
+                  <a href="#!" className="text-gray-400 hover:text-green-400 transition duration-300">Research & Development 
+                    </a>
                 </li>
               </ul>
             </div>
@@ -76,7 +81,7 @@ function Footer() {
         </div>
 
         <div className="bg-black/10 p-6 text-center">
-          <span className="text-gray-400">© 2023 Copyright:</span>{" "}
+          <span className="text-gray-400">© 2021 Copyright:</span>{" "}
           <a href="https://tw-elements.com/" className="font-semibold text-green-400 hover:text-green-500 font-serif transition duration-300">Labsim Technologies Private Limited</a>
         </div>
       </footer>

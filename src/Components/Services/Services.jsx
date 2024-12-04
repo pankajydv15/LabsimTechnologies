@@ -9,10 +9,10 @@ import flight from "../../assets/Icons/icons8-flight.gif";
 import scooter from "../../assets/Icons/icons8-scooter.gif";
 import unloading from "../../assets/Icons/icons8-trailer-unloading.gif";
 import WhyUs from "./WhyUs";
+import simulator from "./simulator.m4v"
 
 function ProductsServices() {
   const [showAll, setShowAll] = useState(false);
-
 
   const products = [
     { id: 1, src: truck, title: "HMV", description: "Lorem ipsum dolor sit amet consectetur. Aliquet amet elementum." },
@@ -26,11 +26,29 @@ function ProductsServices() {
     { id: 9, src: unloading, title: "TIPPER SIMULATOR", description: "Lorem ipsum dolor sit amet consectetur. Aliquet amet elementum." },
   ];
 
-  // Initially sirf pehle 3 products dikhaye jaayenge
   const visibleProducts = showAll ? products : products.slice(0, 3);
 
   return (
-    <section className="bg-white dark:bg-custom-gradient transition-colors duration-300 ">
+    <section className="bg-white dark:bg-custom-gradient transition-colors duration-300">
+      {/* Top Video Section */}
+      <div className="relative">
+        <video
+           src={simulator}
+          className="w-full h-[70vh] object-cover"
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
+        <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50">
+          <h1 className="text-white text-4xl md:text-6xl font-bold">Advanced Simulator Technology</h1>
+          <p className="text-gray-300 text-lg md:text-xl mt-4 px-6 text-center">
+            Experience state-of-the-art simulator solutions for training and development. Designed for precision and efficiency.
+          </p>
+        </div>
+      </div>
+
+      {/* Content Section */}
       <div className="py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
@@ -38,14 +56,14 @@ function ProductsServices() {
               Our Products
               <hr className="dark:border-gray-100 border-gray-900 sm:mx-auto lg:my-4" />
             </h2>
-            <p className="mt-2 text-3xl text-white leading-8 font-semibold py-8 sm:text-4xl">
+            <p className="mt-2 text-3xl text-gray-800 dark:text-white leading-8 font-semibold py-8 sm:text-4xl">
               A Wide Range of Simulators
             </p>
           </div>
 
           <div className="mt-10 grid grid-cols-1 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 gap-x-6">
             {visibleProducts.map((product) => (
-              <div key={product.id} className="bg-white shadow-lg rounded-lg p-6 text-center">
+              <div key={product.id} className="bg-gradient-to-b from-gray-500 to-green shadow-lg rounded-lg p-6 text-center">
                 <div className="mb-4">
                   <img src={product.src} alt={`${product.title} Icon`} className="mx-auto" />
                 </div>
@@ -85,7 +103,7 @@ function ProductsServices() {
           )}
         </div>
       </div>
-      <WhyUs/>
+      <WhyUs />
     </section>
   );
 }

@@ -8,4 +8,5 @@ export default defineConfig({
     host: '0.0.0.0', // Bind to all addresses
     port: 3000, // Default port for local testing
   },
+  assetsInclude: ['**/*.m4v'] 
 })
